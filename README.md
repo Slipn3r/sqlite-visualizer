@@ -1,4 +1,4 @@
-# node-sqlite3-visualizer
+# node sqlite visualizer
 Simple sqlite database visualizer
 
 # Install
@@ -6,9 +6,9 @@ Simple sqlite database visualizer
 npm install
 ```
 # Usage
-1. Replace sqlitedb with your db file
-2. Run:
+- Replace sqlitedb with your db file
+- Run index.js
   ```bash
   node index.js
   ```
-3. Navigate to port 3333
+- Navigate to port 3333
