@@ -1,5 +1,5 @@
 # node sqlite visualizer
-Simple sqlite database visualizer
+Simple sqlite database visualizer using sql.js
 
 # Install
 ```bash
