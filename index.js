@@ -6,8 +6,6 @@ var initSqlJs = require('sql.js');
 var filebuffer = fs.readFileSync('sqlitedb');
 var all = {}
 
-
-
 var app = express();
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
