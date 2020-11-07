@@ -14,9 +14,7 @@ app.get('/', function (req, res) {
   initSqlJs().then(function(SQL){
     var db = new SQL.Database(filebuffer);
     var schema = db.exec('SELECT name, sql FROM sqlite_master WHERE type="table";')[0].values;
-    schema.forEach(t => {
-      all[t[0]] = db.exec('SELECT * FROM ' + t[0]);
-    });
+    schema.forEach(t => all[t[0]] = db.exec('SELECT * FROM ' + t[0]));
     var renderedTables= '';
     Object.keys(all).forEach(table => {
       renderedTables+= '<span>' + table + '</span><table><tbody><tr>';
